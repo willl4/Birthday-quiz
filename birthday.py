@@ -55,7 +55,11 @@ if year is < 1980:
     era = stone age
 elif year is >= 1980 and < 1990:
     era = eighties
-elif year is >= 1990 and 
+elif year is >= 1990 and < 2000:
+    era = nineties
+elif year is > 2000:
+    era = two thousands
+print("{0}, you are a {1} baby of the {2}".format(name, season, era))
 
 
 
