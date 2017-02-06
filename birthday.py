@@ -51,9 +51,11 @@ elif month == "june" or month == "july" or month == "august":
 elif month == "september" or month == "october" or month == "november":
     season = fall
 
-if year is <= 1980:
+if year is < 1980:
     era = stone age
-elif year is >= 1980 and 
+elif year is >= 1980 and < 1990:
+    era = eighties
+elif year is >= 1990 and 
 
 
 
