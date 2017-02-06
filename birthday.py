@@ -38,7 +38,7 @@ todaydate = datetime.today().day
 
 name = input("Hello, what is your name? ")
 month = input("Hi {0} what was the name of the month you were born in? ".format(name))
-year = input("And what year were you born in, {0}? ".format(name))
+year = int(input("And what year were you born in, {0}? ".format(name)))
 day = input("And the day? ")
 month = month.lower()
 
@@ -51,7 +51,7 @@ elif month == "june" or month == "july" or month == "august":
 elif month == "september" or month == "october" or month == "november":
     season = fall
 
-if year is < 1980:
+if year == < 1980:
     era = stone age
 elif year is >= 1980 and < 1990:
     era = eighties
