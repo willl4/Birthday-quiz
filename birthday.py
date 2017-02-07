@@ -43,22 +43,22 @@ day = input("And the day? ")
 month = month.lower()
 
 if month == "december" or month == "january" or month == "february":
-    season = winter
+    season = "winter"
 elif month == "march" or month == "april" or month == "may":
-    season = spring
+    season = "spring"
 elif month == "june" or month == "july" or month == "august":
-    season = summer
+    season = "summer"
 elif month == "september" or month == "october" or month == "november":
-    season = fall
+    season = "fall"
 
-if year == < 1980:
-    era = stone age
-elif year is >= 1980 and < 1990:
-    era = eighties
-elif year is >= 1990 and < 2000:
-    era = nineties
-elif year is > 2000:
-    era = two thousands
+if year < 1980:
+    era = "stone age"
+elif year >= 1980 and year < 1990:
+    era = "eighties"
+elif year >= 1990 and year < 2000:
+    era = "nineties"
+elif year > 2000:
+    era = "two thousands"
 print("{0}, you are a {1} baby of the {2}".format(name, season, era))
 
 
