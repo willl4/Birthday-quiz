@@ -34,7 +34,7 @@ Example Session
 from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
-todaydate = int(datetime.today().day)
+todaydate = datetime.today().day
 
 name = input("Hello, what is your name? ")
 month = input("Hi {0}, what was the name of the month you were born in? ".format(name))
@@ -60,6 +60,31 @@ elif year >= 1990 and year < 2000:
 elif year > 2000:
     era = "two thousands"
 
+if todaymonth == 1:
+    todaymonth1 = "january"
+elif todaymonth == 2:
+    todaymonth1 = "february"
+elif todaymonth == 3:
+    todaymonth1 = "march"
+elif todaymonth == 4:
+    todaymonth1 = "april" 
+elif todaymonth == 5:
+    todaymonth1 = "may" 
+elif todaymonth == 6:
+    todaymonth1 = "june" 
+elif todaymonth == 7:
+    todaymonth1 = "july" 
+elif todaymonth == 8:
+    todaymonth1 = "august" 
+elif todaymonth == 9:
+    todaymonth1 = "september" 
+elif todaymonth == 10:
+    todaymonth1 = "october" 
+elif todaymonth == 11:
+    todaymonth1 = "november" 
+elif todaymonth == 12:
+    todaymonth1 = "december" 
+    
 if int(day) == 31 and month == "october":
     print("You were born on Halloween!")
 elif todaydate == int(day) and todaymonth == month:
